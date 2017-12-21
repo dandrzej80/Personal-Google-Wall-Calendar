@@ -1,27 +1,13 @@
 #!/bin/bash -e
 #General Setup Script For Raspian Install
 
-#Run raspi-config
-sudo raspi-config
+#Get Generic Install Script from GitHub
+cd
+git clone https://github.com/dandrzej80/Raspi-Scripts.git
 
-#Enable SSH/VNC
-#sudo echo "" > /boot/ssh
-
-#Enable Boot To Console
-
-#Edit Crontab File
-#Auto Reboot Nightly
-sudo ed -s /etc/crontab $'-1 r edit-crontab\nw\nq\n'
-
-#Update/Upgrade Raspian
-sudo apt-get update
-sudo apt-get -y upgrade
-
-#Update Firmware
-sudo rpi-update
-
-#Customize File System
+#Run Generic Scripts
+cd Raspi-Scripts
+sudo ./basic-setup.sh
 
 #Reboot Pi
 sudo shutdown -r now
-
