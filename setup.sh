@@ -14,9 +14,9 @@ sudo apt-get install apache2 -y
 
 #Clean up Install Files
 #Remove Raspi-Scripts Folder
-cd ..
+cd
 rm ./Raspi-Scripts/*
-rmdir ./Raspi-Scripts
+rm -rf Raspi-Scripts
 
 #Reboot Pi
 #sudo shutdown -r now
