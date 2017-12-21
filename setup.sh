@@ -7,7 +7,7 @@ git clone https://github.com/dandrzej80/Raspi-Scripts.git
 
 #Run Generic Scripts
 cd Raspi-Scripts
-sudo ./basic-setup.sh
+sudo bash ./basic-setup.sh
 
 #Reboot Pi
 sudo shutdown -r now
