@@ -13,4 +13,4 @@ sudo bash ./basic-setup.sh
 sudo apt-get install apache2 -y
 
 #Reboot Pi
-sudo shutdown -r now
+#sudo shutdown -r now
