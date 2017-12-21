@@ -9,5 +9,8 @@ git clone https://github.com/dandrzej80/Raspi-Scripts.git
 cd Raspi-Scripts
 sudo bash ./basic-setup.sh
 
+#Install and Setup WebServer
+sudo apt-get install apache2 -y
+
 #Reboot Pi
 sudo shutdown -r now
