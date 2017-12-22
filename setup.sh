@@ -17,6 +17,8 @@ sudo apt-get install apache2 -y
 cd
 rm ./Raspi-Scripts/*
 rm -rf Raspi-Scripts
+rm ./Google-Wall-Calendar/*
+rm -rf Google-Wall-Calendar
 
 #Reboot Pi
 #sudo shutdown -r now
