@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+
+function setFocus() {
+    var iframe = document.getElementById("kallender");
+    iframe.contentWindow.focus();
+}
+
+
+</script>
+</head>
+
+<body onLoad="setFocus()">
+<br>
+<iframe src="https://calendar.google.com/calendar/embed?showTitle= *___REPLACE____*  " style="border-width:0" width="790" height="800" frameborder="0" scrolling="no" id="kallender"></iframe>
+
+<br>
+<br>
+
+<iframe type="text/html" frameborder="0" src="https://www.ostgotatrafiken.se/avgangstavla/himmelstalundsvagen?sort=LineNumber&sub=a" height="300px" width="383px"  scrolling="no" style="border-width:0"> </iframe>
+<iframe type="text/html" frameborder="0" src="https://www.ostgotatrafiken.se/avgangstavla/norrkopings-resecentrum?lines=ostgotapendeln" height="300px" width="383px"  scrolling="no" style="border-width:0"> </iframe>
+
+<br>
+<iframe style="align:left"id="forecast_embed" type="text/html" frameborder="0" height="245px" width="830px" src="http://forecast.io/embed/#lat=58.5993&lon=16.166&name=Norrköping&units=si"> </iframe>
+
+
+</body>
+</html>
