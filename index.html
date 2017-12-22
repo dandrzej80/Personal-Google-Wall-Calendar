@@ -3,7 +3,7 @@
 <script>
 
 function setFocus() {
-    var iframe = document.getElementById("kallender");
+    var iframe = document.getElementById("Calendar");
     iframe.contentWindow.focus();
 }
 
@@ -12,18 +12,21 @@ function setFocus() {
 </head>
 
 <body onLoad="setFocus()">
-<br>
-<iframe src="https://calendar.google.com/calendar/embed?showTitle= *___REPLACE____*  " style="border-width:0" width="790" height="800" frameborder="0" scrolling="no" id="kallender"></iframe>
-
-<br>
-<br>
-
-<iframe type="text/html" frameborder="0" src="https://www.ostgotatrafiken.se/avgangstavla/himmelstalundsvagen?sort=LineNumber&sub=a" height="300px" width="383px"  scrolling="no" style="border-width:0"> </iframe>
-<iframe type="text/html" frameborder="0" src="https://www.ostgotatrafiken.se/avgangstavla/norrkopings-resecentrum?lines=ostgotapendeln" height="300px" width="383px"  scrolling="no" style="border-width:0"> </iframe>
-
-<br>
-<iframe style="align:left"id="forecast_embed" type="text/html" frameborder="0" height="245px" width="830px" src="http://forecast.io/embed/#lat=58.5993&lon=16.166&name=Norrköping&units=si"> </iframe>
-
-
+    <br>
+    <iframe src="http://free.timeanddate.com/clock/i619bnah/n105/fn3/fs45/ftb/tt0/tw1/tm1/ts1/tb4" frameborder="0" width="800" height="100"></iframe>
+    <br>
+    <br>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d04n86d13/westfield/?unit=us" data-label_1="WESTFIELD" data-label_2="WEATHER" data-theme="weather_one">WESTFIELD WEATHER</a>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://weatherwidget.io/js/widget.min.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "weatherwidget-io-js");
+    </script>
+    <br>
+    <iframe src="https://calendar.google.com/calendar/embed?title=Andrzejewski%20%2F%20Roberts&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=dandrzej80%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;src=nba_11_Indiana%2BPacers%23sports%40group.v.calendar.google.com&amp;color=%235F6B02&amp;src=nfl_11_Indianapolis%2BColts%23sports%40group.v.calendar.google.com&amp;color=%23865A5A&amp;src=ht3jlfaac5lfd6263ulfh4tql8%40group.calendar.google.com&amp;color=%23853104&amp;src=ncaab_474_Purdue%2BBoilermakers%23sports%40group.v.calendar.google.com&amp;color=%2323164E&amp;src=fftn94r6imr34avfcg7870ap0k%40group.calendar.google.com&amp;color=%2342104A&amp;src=p%23weeknum%40group.v.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <br>
+    <br>
+    <iframe width="400" height="475" frameborder="0" style="border:0" scrolling='no' src="http://www.dwightworley.net/projectexamples/traffic_embed/embedmap_display.php?address=US31%2C+Camel%2C+IN&zoom=11"></iframe>
+    <!-- start feedwind code -->
+    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="58533/"></script>
+    <!-- end feedwind code -->
 </body>
 </html>

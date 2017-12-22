@@ -12,6 +12,9 @@ sudo bash ./basic-setup.sh
 #Install and Setup WebServer
 sudo apt-get install apache2 -y
 
+#Create Webpage
+sudo cp index.html /var/www/html/index.html
+
 #Clean up Install Files
 #Remove Raspi-Scripts Folder
 cd
