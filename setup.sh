@@ -12,16 +12,23 @@ sudo bash ./basic-setup.sh
 #Install and Setup WebServer
 sudo apt-get install apache2 -y
 
-#Create Webpage
-sudo cp index.html /var/www/html/index.html
+#Move Webpage
+cd
+sudo mv /Google-Wall-Calendar/index.html /var/www/html/index.html
+
+#Install Web Browser and Customize Page
+sudo apt-get install iceweasel -y
+sudo mv /Google-Wall-Calendar/index.html /var/www/html/index.html
+#sudo mv /Google-Wall-Calendar/stylish.css 
 
 #Clean up Install Files
 #Remove Raspi-Scripts Folder
 cd
 rm ./Raspi-Scripts/*
 rm -rf Raspi-Scripts
-rm ./Google-Wall-Calendar/*
-rm -rf Google-Wall-Calendar
+#Remove Google-Wall-Calendar Folder
+#rm ./Google-Wall-Calendar/*
+#rm -rf Google-Wall-Calendar
 
 #Reboot Pi
 #sudo shutdown -r now
