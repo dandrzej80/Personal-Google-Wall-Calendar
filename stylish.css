@@ -1,189 +1,161 @@
-@namespace url(http://www.w3.org/1999/xhtml);
+﻿@namespace url(http://www.w3.org/1999/xhtml);
+/*========================Global Changes========================*/
+/*Sets the text color for General text
 
-.date-top{
-  font-size: 40px;
-  font-family: HelveticaNeue-Light,Helvetica,Arial,sans-serif;
-  text-align: left; 
+body {
+    color: #999999 !important;
+}*/
+/*Background color for the Calendar frame
+
+#calcontent,
+#calmaster {
+    background: #111111 !important;
+}*/
+/*====================Calendar Date Top=====================*/
+
+.date-top {
+    font-size: 40px !important;
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif !important;
+    text-align: center !important;
+}
+.date-picker-on,
+.date-picker-off {
+    border: 0px !important;
+    padding: 1px !important;
+    width: 1200px !important;
+}
+.navSpacer {
+    display: none !important;
+}
+#calendarTabs1 {
+    display: none !important;
 }
 
-.date-picker-on, .date-picker-off{
-  border: 0px;
-  padding: 1px;
-  width: 1200px;
+#dateMenuArrow1 {
+    display: none !important;
 }
-
-.mv-event-container{
-  background-color: #FFF;
-  top: 25px;
- }
-  
-.view-container-border{
-  background-color: #FFF;  
+.fe_forecast_link {
+    display: none !important;
 }
-
-.view-cap{
-  background-color: #FFF;    
+.logo-plus-button {
+    display: none;
 }
+/*========================Month View========================*/
+/*Day names in Month view*/
 
-.st-bg, .st-bg-next, .st-bg-today{
-  border-left-width: 5px;
-  border-left-color: #FFF;
-  border-right-width: 0px;
-  border-left-style: solid;
-  background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+.mv-daynames-table {
+    background-color: #FFFFFF !important;
+    line-height: 20px !important;
 }
-
-
-.mv-daynames-table{
-  background-color: #FFF;
-
-  line-height: 20px;
-
+.mv-event-container {
+    background-color: #FFF;
+    top: 25px;
 }
-  
-.footer{
-   padding-top: 0px;
-
+.view-container-border {
+    background-color: #FFFFFF !important;
 }
-
-
-.mv-dayname{
-  color: #111;
-  text-align: center;
-  font-size: 18px;
-  line-height: 18px;
+.view-cap {
+    background-color: #FFFFFF !important;
 }
-
-
-
-.st-dtitle, .st-dtitle-next{
-  border-left-width: 5px;
-  border-top-width: 5px;
-  border-left-style: solid;
-  border-color: #FFF;
-  text-align: left;
-  font-size: 20px;
-  font-weight: bold;
-  color: #DDD;
-  background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+.st-bg,
+.st-bg-next {
+    border-left-width: 5px;
+    border-left-color: #FFFFFF;
+    border-right-width: 0px;
+    border-left-style: solid;
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
 }
-
-.st-dtitle-nonmonth{
-  color: #888;
+.st-bg-today {
+    border-left-width: 5px;
+    border-left-color: #FFFFFF;
+    border-right-width: 0px;
+    border-left-style: solid;
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
 }
-
-.st-dtitle-today{
- border-color: #FFF; 
- border-bottom-width: 0px;
- border-right-width: 0px;
- font-weight: bold;
- text-decoration: underline;
+.footer {
+    padding-top: 0px;
 }
-.st-dtitle-down{
-  border-top-color: #FFF;
+.mv-dayname {
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
 }
-
-
-#dateMenuArrow1, .navSpacer, #calendarTabs1, .subscribe-image, .fe_forecast_link, .logo-plus-button{
-  display: none;
+.st-dtitle {
+    border-left-width: 5px;
+    border-top-width: 5px;
+    border-left-style: solid;
+    border-color: #FFF;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDD;
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
-
-.rb-n{
-  background-color: black;
-  color: #FFF;
-  opacity: 0.9;
-  margin-left: 5px;
-  color: #FFF;
+.st-dtitle-next {
+    border-left-width: 5px;
+    border-top-width: 5px;
+    border-left-style: solid;
+    border-color: #FFF;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDD;
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
-
-
-
-.te-t, .te-s{
-  color: #FFF;
-  opacity: 0.9;
-  padding-left: 5px;
+.st-dtitle-nonmonth {
+    color: #888;
 }
-
-.te-t{
-  font-weight: bold;
+.st-dtitle-today {
+    border-color: #FFF;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    font-weight: bold;
+    text-decoration: underline;
 }
-
-.st-wc{
-
+.st-dtitle-down {
+    border-top-color: #FFF;
 }
-
-
-
-/*Wheater*/
-
-.fe_location{
-  display: none;
-  border-bottom-width: 0px;
+.rb-n {
+    background-color: black;
+    color: #FFF;
+    opacity: 0.9;
+    margin-left: 5px;
 }
-
-.fe_title{
-  display: none;
-  border-bottom-width: 0px;
+.rb-n {
+    content: st-wc(title) !important;
 }
-
-.fe_container{
-  margin-left: -40px;
+.te-t,
+.te-s {
+    color: #FFF;
+    opacity: 0.9;
+/*  padding-left: 5px;*/
 }
-
-/*otraff*/
-
-#settings, #Sitester, #currentTime, #activeFilters{
-  display: none;
+.te-t {
+    font-weight: bold;
 }
-
-#activeFilters{
- height: 0px;
-  visibility: collapse;
+.subscribe-image {
+    display: none !important;
 }
-
-.footer, .currentTime, .showSettingsButton{
-  display: none;
-  
+table div div {
+    height: inherit!important;
+    overflow: inherit !important;
+    white-space: normal !important;
+    padding-left: 5px !important;
 }
+/*=========================Week View========================*/
+/*=======================Adgenda View=======================*/
 
-.StopDeparturesPage h1{
-  font-size: 30px;
-  font-family: HelveticaNeue-Light,Helvetica,Arial,sans-serif;
-  line-height: 30px;
-  margin-block-start: 0px;
-  margin-bottom: 20px; 
+.agenda,
+.date-label {
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png) !important;
 }
-
-
-.StopDeparturesPage #activeFilters{
-  display: none;
-  margin-bottom: 0px;
-}
-
-.text{
-  font-size: 20px;
-}
-
-.trafficType.ttIconLarge .ttIcon{
-  height: 50px;
-  width: 50px;
-}
-
-.trafficType.backgroundColor.TÅG .ttIcon, .trafficType.backgroundColor.TÄTO .ttIcon{
-  background-color: #000;
-}
-
-.fe_container .fe_title{
-  border-bottom: 0px solid #000;
-}
-
-.StopDeparturesPage .upcomingDepartures{
-  font-size: 150%;
-}
-
-.departureItem real{
-  width: 4356.733px;
+.day {
+    color: #FFFFFF !important;
 }
