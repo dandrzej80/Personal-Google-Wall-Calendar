@@ -1,0 +1,3 @@
+@xset -dpms
+@iceweasel -FullScreen file:///var/www/html/index.html
+@unclutter -grab -visible
