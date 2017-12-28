@@ -7,7 +7,7 @@ git clone https://github.com/dandrzej80/Raspi-Scripts.git
 
 #Run Generic Scripts
 cd Raspi-Scripts
-sudo bash ./basic-setup.sh
+sudo bash basic-setup.sh
 
 #Install and Setup WebServer
 sudo apt-get install apache2 -y
@@ -19,18 +19,18 @@ sudo mv /home/pi/Google-Wall-Calendar/index.html /var/www/html/index.html
 #Install Web Browser and Customize Page
 sudo apt-get install iceweasel unclutter x11-xserver-utils -y
 sudo mv /home/pi/Google-Wall-Calendar/stylish.css /var/www/html/stylish.css
-cat ./Google-Wall-Calendar/edit-autostart | sudo tee -a /home/pi/.config/lxsession/LXDE-pi/autostart
+cat /home/pi/Google-Wall-Calendar/edit-autostart | sudo tee -a /home/pi/.config/lxsession/LXDE-pi/autostart
 
 #Rotate Screen
-cat ./Google-Wall-Calendar/edit-config.txt | sudo tee -a /boot/config.txt
+sleep 10
+cat /home/pi/Google-Wall-Calendar/edit-config.txt | sudo tee -a /boot/config.txt
 
 #Clean up Install Files
 #Remove Raspi-Scripts Folder
-cd
-rm ./Raspi-Scripts/*
+rm /home/pi/Raspi-Scripts/*
 rm -rf Raspi-Scripts
 #Remove Google-Wall-Calendar Folder
-rm ./Google-Wall-Calendar/*
+rm /home/pi/Google-Wall-Calendar/*
 rm -rf Google-Wall-Calendar
 
 #Reboot Pi
