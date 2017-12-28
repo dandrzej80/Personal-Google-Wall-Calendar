@@ -1,3 +1,5 @@
+@xset s off
 @xset -dpms
+@xset s noblank
 @iceweasel -FullScreen file:///var/www/html/index.html
 @unclutter -grab -visible

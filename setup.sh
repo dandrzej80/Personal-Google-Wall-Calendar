@@ -19,11 +19,10 @@ sudo mv /home/pi/Google-Wall-Calendar/index.html /var/www/html/index.html
 #Install Web Browser and Customize Page
 sudo apt-get install iceweasel unclutter x11-xserver-utils -y
 sudo mv /home/pi/Google-Wall-Calendar/stylish.css /var/www/html/stylish.css
-#sudo ed -s /home/pi/.config/lxsession/LXDE-pi/autostart <<< $'$ r ./Google-Wall-Calendar/edit-autostart\nw\nq\n'
-sudo cat ./Google-Wall-Calendar/edit-autostart >> /home/pi/.config/lxsession/LXDE-pi/autostart
+cat ./Google-Wall-Calendar/edit-autostart | sudo tee -a /home/pi/.config/lxsession/LXDE-pi/autostart
+
 #Rotate Screen
-#sudo ed -s /boot/config.txt <<< $'$ r ./Google-Wall-Calendar/edit-config.txt\nw\nq\n'
-sudo cat ./Google-Wall-Calendar/edit-config.txt >> /boot/config.txt
+cat ./Google-Wall-Calendar/edit-config.txt | sudo tee -a /boot/config.txt
 
 #Clean up Install Files
 #Remove Raspi-Scripts Folder
