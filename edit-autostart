@@ -1,5 +1,6 @@
 @xset s off
 @xset -dpms
 @xset s noblank
-@iceweasel -FullScreen file:///var/www/html/index.html
+@iceweasel file:///var/www/html/index.html
 @unclutter -grab -visible
+@sh /var/www/html/startkiosk.sh
