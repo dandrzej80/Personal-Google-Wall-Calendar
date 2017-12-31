@@ -1,2 +1,2 @@
-iceweasel -url file:///var/www/html/index.html &
-xdotool search --onlyvisible --name "iceweasel" windowactivate key F11
+sleep 30
+xdotool key F11
