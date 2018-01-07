@@ -13,14 +13,14 @@
   /* Always set the map height explicitly to define the size of the div
    * element that contains the map. */
   #map {
-    height: 400px;
+    height: 450px;
     width: 475px;
   }
 </style>
 </head>
 <body onLoad="setFocus()">
     <br>
-    <iframe src="http://free.timeanddate.com/clock/i619bnah/n105/fn3/fs45/ftb" frameborder="0" width="900" height="50"></iframe>
+    <iframe src="http://free.timeanddate.com/clock/i619bnah/n105/fn3/fs45/ftb" frameborder="0" width="875" height="50"></iframe>
 
     <br>
     <br>
@@ -32,7 +32,7 @@
     <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=1150&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=dandrzej80%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;src=9531606dukun3ujqftqpgooin3lmblpr%40import.calendar.google.com&amp;color=%23865A5A&amp;src=9gfemknkgifp1d5pciomnaoedo%40group.calendar.google.com&amp;color=%23875509&amp;src=85l5qvucom5bddtpqldp0ub95s%40group.calendar.google.com&amp;color=%23182C57&amp;src=vsureei4hegv033c541sls44kc%40group.calendar.google.com&amp;color=%23865A5A&amp;src=h5jvpo395t4k5bancair3a1a0s%40group.calendar.google.com&amp;color=%23125A12&amp;src=fftn94r6imr34avfcg7870ap0k%40group.calendar.google.com&amp;color=%2342104A&amp;src=p%23weather%40group.v.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FNew_York" style="border-width:0" width="875" height="900" frameborder="0" scrolling="no"></iframe>
     <br>
     <div id="MapNewsContainer">
-      <div id="map" style = "float:left; padding:10px;"></div>
+      <div id="map" style = "float:left; padding:15px;"></div>
         <script>
           function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -46,8 +46,8 @@
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDipaxPOzX6Ni3W9nCIRogux-dhW_zJNjw&callback=initMap">
         </script>
-      <div id="news" style = "float:left; padding:10px;">
-         <iframe src="https://feed.mikle.com/widget/v2/58533/" height="425px" width="350px" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+      <div id="news" style = "float:left; padding:15px;">
+        <iframe src="https://feed.mikle.com/widget/v2/58533/" height="450px" width="350px" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
       </div>
     </div>
 </body>
