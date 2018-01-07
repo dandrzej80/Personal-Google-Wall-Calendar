@@ -1,3 +1,3 @@
 
 # Rotate Screen 90 Degrees
-display_rotate=1
+display_rotate=3
