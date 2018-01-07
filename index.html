@@ -1,21 +1,26 @@
 <html>
 <head>
 <script>
-
-function setFocus() {
+  function setFocus() {
     var iframe = document.getElementById("Calendar");
     iframe.contentWindow.focus();
 }
-
-
 </script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<title>Andrzejewski/Roberts Wall Calendar</title>
+<style>
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 600px;
+    width: 500px;
+  }
+</style>
 </head>
-
 <body onLoad="setFocus()">
     <br>
-    <div class="responsiveDate">
-      <iframe src="http://free.timeanddate.com/clock/i619bnah/n105/fn3/fs45/ftb/tt0/tw1/tm1/ts1/tb4" frameborder="0" width="1040" height="100"></iframe>
-    </div>
+    <iframe src="http://free.timeanddate.com/clock/i619bnah/n105/fn3/fs45/ftb/tt0/tw1/tm1/ts1/tb4" frameborder="0" width="900" height="100"></iframe>
     <br>
     <br>
     <a class="weatherwidget-io" href="https://forecast7.com/en/40d04n86d13/westfield/?unit=us" data-label_1="WESTFIELD" data-label_2="WEATHER" data-theme="weather_one">WESTFIELD WEATHER</a>
@@ -27,9 +32,24 @@ function setFocus() {
       <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;height=1040&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=dandrzej80%40gmail.com&amp;color=%23333333&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;src=9531606dukun3ujqftqpgooin3lmblpr%40import.calendar.google.com&amp;color=%23B1365F&amp;src=9gfemknkgifp1d5pciomnaoedo%40group.calendar.google.com&amp;color=%23875509&amp;src=85l5qvucom5bddtpqldp0ub95s%40group.calendar.google.com&amp;color=%23182C57&amp;src=vsureei4hegv033c541sls44kc%40group.calendar.google.com&amp;color=%2388880E&amp;src=h5jvpo395t4k5bancair3a1a0s%40group.calendar.google.com&amp;color=%23070606&amp;src=fftn94r6imr34avfcg7870ap0k%40group.calendar.google.com&amp;color=%23125A12&amp;src=p%23weather%40group.v.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FNew_York" style="border-width:0" width="1040" height="1040" frameborder="0" scrolling="no"></iframe>
     </div>
     <br>
-    <div class="responsiveNews">
-      <iframe width="520" height="520" frameborder="0" style="border:0" scrolling='no' src="http://www.dwightworley.net/projectexamples/traffic_embed/embedmap_display.php?address=US31%2C+Camel%2C+IN&zoom=11"></iframe>
-      <iframe src="https://feed.mikle.com/widget/v2/58533/" height="520" width="520" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+    <div id="MapNewsContainer">
+      <div id="map" style = "float:left; padding:10px;"></div>
+        <script>
+          function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 11,
+              center: {lat: 39.9908736, lng: -86.1399210}
+            });
+            var trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(map);
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDipaxPOzX6Ni3W9nCIRogux-dhW_zJNjw&callback=initMap">
+        </script>
+      <div id="news" style = "float:left; padding:10px;">
+         <iframe src="https://feed.mikle.com/widget/v2/58533/" height="625px" width="350px" class="fw-iframe" scrolling="no" frameborder="0"></iframe> 
+      </div>
     </div>
 </body>
 </html>

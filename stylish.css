@@ -11,19 +11,6 @@ body {
 #calmaster {
     background: #111111 !important;
 }*/
-.responsiveDate {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
-}
-.responsiveDate iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .responsiveCal {
     position: relative;
     padding-bottom: 75%;
@@ -35,19 +22,6 @@ body {
     top:0;
     left: 0;
     width: 100%;
-    height: 100%;
-}
-.responsiveNews {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
-}
-.responsiveNews iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 50%;
     height: 100%;
 }
 /*====================Calendar Date Top=====================*/
