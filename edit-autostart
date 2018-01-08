@@ -1,3 +1,4 @@
+@sh /home/pi/load_buttons.sh
 @xset s off
 @xset -dpms
 @xset s noblank
