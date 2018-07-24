@@ -5,5 +5,5 @@
 cd /
 cd /home/pi/
 sudo modprobe uinput
-sudo python switch.py
+sudo python button_script.py
 cd /
