@@ -11,20 +11,23 @@ GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(22, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 device = uinput.Device([
-        uinput.KEY_P,
-        uinput.KEY_N,
-	uinput.KEY_F5,
-	uinput.KEY_M,
-	uinput.KEY_W
-        ])
+         uinput.KEY_P,
+         uinput.KEY_N,
+	     uinput.KEY_F5,
+	     uinput.KEY_M,
+	     uinput.KEY_W])
 
 view = 'm'
 
 while True:
     input_state_back = GPIO.input(19)
-    input_state_forward = GPIO.input(20)
-    input_state_multi = GPIO.input(21)
+    input_state_forward = GPIO.input(21)
+    input_state_multi = GPIO.input(20)
     input_state_refresh = GPIO.input(22)
+
+    if input_state_multi == False and input_state_back == False and input_state_forward == False:
+        print('All buttons pressed')
+        os.system('sudo reboot')
 
     if input_state_back == False:
         print('Button P Pressed')
@@ -39,10 +42,6 @@ while True:
         device.emit_click(uinput.KEY_F5)
         time.sleep(0.5)
 
-    if input_state_multi == False and input_state_back == False and input_state_forward == False:
-        print('All buttons pressed')
-        os.system('sudo reboot')
-
     if input_state_multi == False:
 	start = time.time()
 	time.sleep(0.01)
@@ -51,13 +50,9 @@ while True:
 		print('Multibutton is pressed')
 		end = time.time()
 		multi_press_time = end-start
-		input_state_multi = GPIO.input(21)
-
 		if input_state_multi ==  True or multi_press_time > 5.5:
 			print('Button press in', multi_press_time)
 			break
-
-
 	if multi_press_time < 5:
         	if view == 'm':
 			device.emit_click(uinput.KEY_A)
@@ -73,7 +68,3 @@ while True:
 		print('Keypress: F5')
 		device.emit_click(uinput.KEY_F5)
 		time.sleep(0.5)
-
-    if input_state_multi == False and input_state_back == False and input_state_forward == False:
-	print('All buttons pressed')
-	os.system('sudo reboot')

@@ -28,7 +28,7 @@ cd
 sudo mv /home/pi/Google-Wall-Calendar/button_script.py /home/pi/button_script.py
 sudo mv /home/pi/Google-Wall-Calendar/load_buttons.sh /home/pi/load_buttons.sh
 chmod 755 /home/pi/load_buttons.sh
-pip install python-uinput
+sudo pip install python-uinput
 
 #Rotate Screen
 cat /home/pi/Google-Wall-Calendar/edit-config.txt | sudo tee -a /boot/config.txt
