@@ -13,8 +13,11 @@
   /* Always set the map height explicitly to define the size of the div
    * element that contains the map. */
   #map {
-    height: 450px;
-    width: 475px;
+    height: 425px;
+    width: 425px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 10px;
   }
 </style>
 </head>
@@ -29,7 +32,7 @@
         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://weatherwidget.io/js/widget.min.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "weatherwidget-io-js");
     </script>
     <br>
-    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=1150&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=dandrzej80%40gmail.com&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;src=9531606dukun3ujqftqpgooin3lmblpr%40import.calendar.google.com&amp;color=%23865A5A&amp;src=9gfemknkgifp1d5pciomnaoedo%40group.calendar.google.com&amp;color=%23875509&amp;src=85l5qvucom5bddtpqldp0ub95s%40group.calendar.google.com&amp;color=%23182C57&amp;src=vsureei4hegv033c541sls44kc%40group.calendar.google.com&amp;color=%23865A5A&amp;src=h5jvpo395t4k5bancair3a1a0s%40group.calendar.google.com&amp;color=%23125A12&amp;src=fftn94r6imr34avfcg7870ap0k%40group.calendar.google.com&amp;color=%2342104A&amp;src=p%23weather%40group.v.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FNew_York" style="border-width:0" width="875" height="900" frameborder="0" scrolling="no" id="Calendar"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=900&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=dandrzej80%40gmail.com&amp;color=%238C500B&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;src=9531606dukun3ujqftqpgooin3lmblpr%40import.calendar.google.com&amp;color=%23125A12&amp;src=9gfemknkgifp1d5pciomnaoedo%40group.calendar.google.com&amp;color=%23875509&amp;src=85l5qvucom5bddtpqldp0ub95s%40group.calendar.google.com&amp;color=%23182C57&amp;src=megsywoo%40yahoo.com&amp;color=%23691426&amp;src=vsureei4hegv033c541sls44kc%40group.calendar.google.com&amp;color=%23875509&amp;src=h5jvpo395t4k5bancair3a1a0s%40group.calendar.google.com&amp;color=%23333333&amp;src=fftn94r6imr34avfcg7870ap0k%40group.calendar.google.com&amp;color=%23711616&amp;src=p%23weather%40group.v.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FNew_York" style="border-width:0" width="875" height="900" frameborder="0" scrolling="no" id="Calendar"></iframe>
     <br>
     <div id="MapNewsContainer">
       <div id="map" style = "float:left; padding:15px;"></div>
@@ -47,7 +50,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDipaxPOzX6Ni3W9nCIRogux-dhW_zJNjw&callback=initMap">
         </script>
       <div id="news" style = "float:left; padding:15px;">
-        <iframe src="https://feed.mikle.com/widget/v2/58533/" height="450px" width="350px" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+        <iframe src="https://feed.mikle.com/widget/v2/58533/" height="425px" width="350px" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
       </div>
     </div>
 </body>
